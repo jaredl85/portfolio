@@ -4,7 +4,7 @@ import './navbar.scss';
 export default function NavBar() {
     return (
         <div className="navbar">
-            <dic className="wrapper">
+            <div className="wrapper">
                 <div className="left">
                     <a href="#home" className="logo">JL</a>
                 </div>
@@ -16,7 +16,7 @@ export default function NavBar() {
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-            </dic>
+            </div>
         </div >
     )
 }

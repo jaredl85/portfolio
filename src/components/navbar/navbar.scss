@@ -3,8 +3,8 @@
 .navbar {
     width: 100%;
     height: 70px;
-    background-color: $darkestColor;
-    border-bottom: 1px solid $lightestColor;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-bottom: 3px solid $lightestColor;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -24,6 +24,7 @@
                         color: $lightestColor;
                         padding: 5px;
                         letter-spacing: 1.5px;
+                        display: none;
                     }
                 }
 
