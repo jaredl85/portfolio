@@ -6,9 +6,17 @@
     padding-top: 80px;
     padding-bottom: 80px;
     .icon-box {
-        color: $darkestColor;
-        font-size: 8rem;
         text-align: center;
+    }
+    .icon-box a {
+        font-size: 8rem;
+        text-decoration: none;
+        color: $darkestColor;
+        transition: .5s;
+    }
+    .icon-box a:hover {
+        color: $mainColor;
+        transition: .5s;
     }
     .icon {
         margin: 40px;

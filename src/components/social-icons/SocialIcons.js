@@ -7,9 +7,9 @@ class SocialIcons extends Component {
         return (
             <div className="icon-container">
                 <div className="icon-box">
-                    <FaGithub class="icon" />
-                    <FaCodepen class="icon" />
-                    <FaLinkedin class="icon" />
+                    <a href="#home"><FaGithub class="icon" /></a>
+                    <a href="#home"><FaCodepen class="icon" /></a>
+                    <a href="#home"><FaLinkedin class="icon" /></a>
                 </div>
             </div>
         )
