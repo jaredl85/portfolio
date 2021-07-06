@@ -1,21 +1,18 @@
 @import './global.scss';
 
 .App {
-  height: 100vh;
+  height: auto;
   background-image: url('./resources/img/plash3.png');
   background-size: cover;
   background-position: center center;
   background-repeat: repeat;
   background-attachment: fixed;
-    .sections{
-      width: 100%;
-      height: calc(100vh - 70px);
-      position: relative;
-      top: 70px;
-      scroll-behavior: smooth;
-        > * {
-          width: 100vw;
-          height: calc(100vh - 70px);
-        }
-    }
+    // .sections{
+    //   height: inherit;
+    //   width: 100%;
+    //   padding: 40px;
+    //   position: relative;
+    //   top: 70px;
+    //   scroll-behavior: smooth;
+    // }
 }
