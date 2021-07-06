@@ -2,13 +2,12 @@
 
 .home {
     background-color: none;
-    height: calc(100vh - 70px);
 }
 
 .splash-text-box {
     position: relative;
     top: 30%;
-    left: 30%;
+    left: 25%;
     padding: 25px;
 }
 
@@ -17,12 +16,13 @@ h1 {
     font-size: 6rem;
     font-weight: 100;
     margin-bottom: 20px;
-}
-
-h1 span {
-    color: $mainColor;
-    font-weight: 300;
-    letter-spacing: 2px;
+    
+    span {
+        color: $mainColor;
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: inherit;
+    }
 }
 
 .home-btn {
@@ -46,4 +46,20 @@ h1 span {
     color: $darkestColor;
     border: 2px solid $darkestColor;
     transition: .5s;
+}
+
+/*** TYPING EFFECT ***/
+///////////////////////
+
+.ityped-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0;
+    }
 }
