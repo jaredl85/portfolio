@@ -9,22 +9,26 @@ class Work extends Component {
                 {
                     id: 0,
                     image: '../../images/placeholder.png',
-                    name: 'Project 1'
+                    name: 'Project 1',
+                    url: '#home'
                 },
                 {
                     id: 1,
                     image: '../../images/placeholder.png',
-                    name: 'project 2'
+                    name: 'project 2',
+                    url: '#home'
                 },
                 {
                     id: 2,
                     image: '../../images/placeholder.png',
-                    name: 'project 3'
+                    name: 'project 3',
+                    url: '#home'
                 },
                 {
                     id: 3,
                     image: '../../images/placeholder.png',
-                    name: 'project 4'
+                    name: 'project 4',
+                    url: '#home'
                 }
             ]
         };
@@ -34,7 +38,7 @@ class Work extends Component {
         const projects = this.state.projects.map(project => {
             return (
                 <div key={project.id} className="project-col">
-                    <a href="#home"><img src={project.image} alt={project.name} /></a>
+                    <a href={project.url}><img src={project.image} alt={project.name} /></a>
                 </div>
             )
         })
@@ -42,7 +46,7 @@ class Work extends Component {
             <div className="work" id="work">
                 <h2>Work</h2>
                 <div className="work-row">
-                    {projects};
+                    {projects}
                 </div>
             </div>
         )

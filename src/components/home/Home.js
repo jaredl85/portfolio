@@ -23,7 +23,9 @@ export default function Home() {
                 <h1>
                     Hello. I'm <span>Jared.</span>
                     <br />
-                    I build websites with <span ref={textRef}></span>
+                    I build websites with 
+                    <br />
+                    <span ref={textRef}></span>
                 </h1>
                 <br/>
                 <a className="home-btn" href="#work">See my work</a>

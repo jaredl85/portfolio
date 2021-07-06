@@ -1,0 +1,16 @@
+@import '../../global.scss';
+
+.icon-container {
+    width: 100%;
+    background-color: $lightestColor;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .icon-box {
+        color: $darkestColor;
+        font-size: 8rem;
+        text-align: center;
+    }
+    .icon {
+        margin: 40px;
+    }
+}

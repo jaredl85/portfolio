@@ -1,5 +1,6 @@
 import React from 'react';
 import me from '../../resources/img/me.jpg';
+import SocialIcons from '../social-icons/SocialIcons.js';
 import './about.scss';
 
 export default function About() {
