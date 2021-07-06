@@ -38,6 +38,19 @@ export default function About() {
                     <a className="resume-btn" href="#">See my resume</a>
                 </div>
             </div>
+            <div className="row">
+                <div className="skills">
+                    <h3>Skills</h3>
+                    <li><h4>HTML</h4><span class="bar"><span class="html"></span></span></li>
+                    <li><h4>CSS</h4><span class="bar"><span class="css"></span></span></li>
+                    <li><h4>SASS</h4><span class="bar"><span class="sass"></span></span></li>
+                    <li><h4>Bootstrap</h4><span class="bar"><span class="bootstrap"></span></span></li>
+                    <li><h4>JavaScript</h4><span class="bar"><span class="javascript"></span></span></li>
+                    <li><h4>React</h4><span class="bar"><span class="react"></span></span></li>
+                    <li><h4>WordPress</h4><span class="bar"><span class="wordpress"></span></span></li>
+                    <li><h4>Design</h4><span class="bar"><span class="design"></span></span></li>
+                </div>
+            </div>
         </div>
     )
 }
