@@ -1,3 +1,74 @@
+@import '../../global.scss';
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact {
-    background-color: lightblue;
+    background-color: $lightestColor;
+    height: auto;
+    font-size: 2rem;
+    line-height: 1.7;
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        color: $darkestColor;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 60px;
+        display: block;
+    }
+    .contact-form {
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+        label {
+            text-transform: uppercase;
+            margin-right: 30px;
+            text-align: right;
+            float: left;
+            width: 250px;
+        }
+        .input-field {
+            width: 500px;
+            height: 30px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            //float: right;
+            border: 1px solid $darkestColor;
+        }
+        .message-field {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            //float: right;
+            border: 1px solid $darkestColor;
+        }
+        .text-danger {
+            font-size: 1rem;
+            color: crimson;
+            margin-left: 15px;
+        }
+        .submit-btn {
+            background-color: rbga(0, 0, 0, 0.4);
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 2.5px;
+            color: $midLight;
+            border: 2px solid $midLight;
+            padding: 15px;
+            margin-top: 35px;
+            margin-left: 35px;
+            text-align: right;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: .5s;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    }
 }
