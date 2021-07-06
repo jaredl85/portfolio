@@ -1,3 +1,33 @@
+@import '../../global.scss';
+
 .work {
-    background-color: lightgreen;
+    width: 100vw;
+    background-color: white;
+}
+
+.work h2 {
+    text-align: center;
+    font-size: 4rem;
+    color: $darkestColor;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 60px;
+    display: block;
+}
+
+.work-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-around;
+}
+
+.project-col {
+    border: 1px solid black;
+    width: 45%;
+    margin: 2%;
+    height: 600px;
 }
