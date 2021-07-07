@@ -1,7 +1,32 @@
+@import '../../global.scss';
+
 .footer {
-    background-color: blue;
+    background-color: $mainColor;
     width: 100%;
-    position: fixed;
     bottom: 0;
     left: 0;
+    padding-bottom: 40px;
+    border-top: 3px solid $darkestColor;
+    p {
+        color: white;
+        font-size: 1.25rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    a {
+        text-decoration: none;
+        color: #444;
+        margin-top: 20px;
+        transition: .25s;
+        font-size: 1.75rem;
+        display: block;
+        text-align: center;
+    }
+    a:hover {
+        color: $darkestColor;
+        transition: .25s;
+    }
 }

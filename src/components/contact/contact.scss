@@ -8,7 +8,6 @@
 
 .contact {
     background-color: $lightestColor;
-    height: auto;
     font-size: 2rem;
     line-height: 1.7;
     padding-bottom: 40px;
@@ -30,6 +29,7 @@
             margin-right: 30px;
             text-align: right;
             width: 15%;
+            color: #444;
         }
         .input-field {
             width: 600px;
@@ -61,8 +61,6 @@
             color: $midLight;
             border: 2px solid $midLight;
             padding: 15px;
-            margin-top: 35px;
-            margin-left: 35px;
             text-align: right;
             border-radius: 5px;
             text-transform: uppercase;

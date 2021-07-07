@@ -99,7 +99,8 @@ class Contact extends Component {
                                          <Button className="submit-btn" type="submit" color="primary">
                                             Submit
                                         </Button>
-
+                                        <br />
+                                        <br />
                                     </Col>
                                 </Row>
                                 <Row className="form-group">
