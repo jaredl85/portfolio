@@ -3,22 +3,28 @@
 .icon-container {
     width: 100%;
     background-color: $lightestColor;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .icon-box {
         text-align: center;
     }
-    .icon-box a {
-        font-size: 8rem;
-        text-decoration: none;
-        color: $darkestColor;
-        transition: .5s;
-    }
-    .icon-box a:hover {
+    .icon:hover {
         color: $mainColor;
         transition: .5s;
     }
     .icon {
-        margin: 40px;
+        margin: 60px;
+        font-size: 4rem;
+        text-decoration: none;
+        color: $darkestColor;
+        transition: .5s;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+   .icon-container {
+       .icon {
+       margin: 20px;
+       }
     }
 }

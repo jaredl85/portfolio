@@ -1,35 +1,485 @@
 @import '../../global.scss';
 
 .work {
-    width: 100vw;
-    background-color: white;
-}
-
-.work h2 {
-    text-align: center;
-    font-size: 4rem;
-    color: $darkestColor;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 60px;
-    display: block;
-}
-
-.work-row {
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    padding-bottom: 80px;
+  }
+  
+  h2 {
+      text-align: center;
+      font-size: 3.5rem;
+      color: $darkestColor;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin: 60px;
+      display: block;
+  }
+  
+  
+  .work_container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: space-around;
-}
+    flex-flow: row;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+  }
 
-.project-col {
-    width: 45%;
-    margin: 2%;
-    height: auto;
-    img {
-        width: 100%;
+  .work_row {
+    width: 100%;
+  }
+  
+  .cards_item {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 20px;
+  }
+
+  .buffer {
+    padding: 20px;
+    height: 310px;
+    width: 390px;
+    opacity: 0;
+    transition: 0.5s;
+    margin: 0 auto;
+  }
+
+  .buffer:hover {
+    opacity: .9;
+    transition: 0.5s;
+    background-color: $darkestColor;
+  }
+
+  .project {
+    position: relative;
+    width: 430px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    line-height: 1.7;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .project-heading {
+    font-size: 1.3rem;
+  }
+
+  .project-link {
+    text-decoration: none;
+    color: $lightestColor;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: 0.25s;
+  }
+
+  .project-link:hover {
+    color: $mainColor;
+    transition: 0.25s;
+  }
+
+  .project-skills {
+    color: $midDark;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 20px;
+      strong {
+        color: white;
+      }
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+  .nechiro {
+    background-image: url('../../resources/img/nec_splash.png');
+    background-position: center;
+    background-size: 430px 350px;
+    background-repeat: no-repeat;
+  }
+
+  .dogwithin {
+    background-image: url('../../resources/img/twd_splash.png');
+    background-position: center;
+    background-size: 430px 350px;
+    background-repeat: no-repeat;
+  }
+
+  .nucamp {
+    background-image: url('../../resources/img/nucamp_splash.png');
+    background-position: center;
+    background-size: 430px 350px;
+    background-repeat: no-repeat;
+  }
+
+  .portfolio-project {
+    background-image: url('../../resources/img/portfolio_splash.png');
+    background-position: center;
+    background-size: 430px 350px;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: $breakpoint-laptop) {
+    .work {
+      background: #fff;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: none;
+      padding-bottom: 80px;
     }
-}
+    
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        color: $darkestColor;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 60px;
+        display: block;
+    }
+    
+    
+    .work_container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      align-items: center;
+      max-width: 1140px;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .work_row {
+      width: 100%;
+    }
+    
+    .cards_item {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin: 20px;
+    }
+  
+    .buffer {
+      padding: 20px;
+      height: 310px;
+      width: 390px;
+      opacity: 0;
+      transition: 0.5s;
+      margin: 0 auto;
+    }
+  
+    .buffer:hover {
+      opacity: .9;
+      transition: 0.5s;
+      background-color: $darkestColor;
+    }
+  
+    .project {
+      position: relative;
+      width: 430px;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      line-height: 1.7;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .project-heading {
+      font-size: 1.3rem;
+    }
+  
+    .project-link {
+      text-decoration: none;
+      color: $lightestColor;
+      font-size: 1.2rem;
+      font-weight: 700;
+      transition: 0.25s;
+    }
+  
+    .project-link:hover {
+      color: $mainColor;
+      transition: 0.25s;
+    }
+  
+    .project-skills {
+      color: $midDark;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 20px;
+        strong {
+          color: white;
+        }
+    }
+  
+    .project-description {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  
+    .nechiro {
+      background-image: url('../../resources/img/nec_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .dogwithin {
+      background-image: url('../../resources/img/twd_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .nucamp {
+      background-image: url('../../resources/img/nucamp_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .portfolio-project {
+      background-image: url('../../resources/img/portfolio_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    .work {
+      background: #fff;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: none;
+      padding-bottom: 80px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        color: $darkestColor;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin: 60px;
+        display: block;
+    }
+    
+    
+    .work_container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+      align-items: center;
+      max-width: 1140px;
+      margin: 0 auto;
+      position: relative;
+    }
+  
+    .work_row {
+      width: 100%;
+    }
+    
+    .cards_item {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin: 20px;
+    }
+  
+    .buffer {
+      padding: 20px;
+      height: 310px;
+      width: 390px;
+      opacity: 0;
+      transition: 0.5s;
+      margin: 0 auto;
+    }
+  
+    .buffer:hover {
+      opacity: .9;
+      transition: 0.5s;
+      background-color: $darkestColor;
+    }
+  
+    .project {
+      position: relative;
+      width: 430px;
+      height: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      line-height: 1.7;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .project-heading {
+      font-size: 1.3rem;
+    }
+  
+    .project-link {
+      text-decoration: none;
+      color: $lightestColor;
+      font-size: 1.2rem;
+      font-weight: 700;
+      transition: 0.25s;
+    }
+  
+    .project-link:hover {
+      color: $mainColor;
+      transition: 0.25s;
+    }
+  
+    .project-skills {
+      color: $midDark;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 20px;
+        strong {
+          color: white;
+        }
+    }
+  
+    .project-description {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+  
+    .nechiro {
+      background-image: url('../../resources/img/nec_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .dogwithin {
+      background-image: url('../../resources/img/twd_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .nucamp {
+      background-image: url('../../resources/img/nucamp_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  
+    .portfolio-project {
+      background-image: url('../../resources/img/portfolio_splash.png');
+      background-position: center;
+      background-size: 430px 350px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (max-width: $breakpoint-phone) {
+    
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    
+    .work_container {
+      flex-flow: column;
+    }
+  
+    .work_row {
+      width: 100%;
+    }
+    
+    .cards_item {
+      display: block;
+      float: left;
+      margin: 20px;
+      width: 87%;
+    }
+  
+    .buffer {
+      padding: 10px;
+      height: 330px;
+      width: 100%;
+      margin-left: 5%;
+      opacity: 1;
+      background-color: $darkestColor;
+    }
+  
+    .project {
+      position: relative;
+      width: 430px;
+      height: 350px;
+      border-radius: 0px;
+      overflow: hidden;
+      color: white;
+      line-height: 1.7;
+      width: 100%;
+      padding: 0px;
+    }
+  
+    .project-heading {
+      font-size: 1.1rem;
+    }
+  
+    .project-link {
+      text-decoration: none;
+      color: $lightestColor;
+      font-size: 1.2rem;
+      font-weight: 700;
+      transition: 0.25s;
+    }
+  
+    .project-link:hover {
+      color: $mainColor;
+      transition: 0.25s;
+    }
+  
+    .project-skills {
+      color: $midDark;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 20px;
+        strong {
+          color: white;
+        }
+    }
+  
+    .project-description {
+      font-size: 1.2rem;
+      font-weight: 300;
+      width: 90%;
+    }
+  
+    .nechiro {
+      background-image: none;
+    }
+  
+    .dogwithin {
+      background-image: none;
+    }
+  
+    .nucamp {
+      background-image: none;
+    }
+  
+    .portfolio-project {
+      background-image: none;
+    }
+  }
+
+

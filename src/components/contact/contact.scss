@@ -3,50 +3,61 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 100vw;
+    width: 100%;
+    background-color: $lightestColor;
 }
 
 .contact {
-    background-color: $lightestColor;
-    font-size: 2rem;
     line-height: 1.7;
     padding-bottom: 40px;
+    background-color: $lightestColor;
+    width: 100%;
     h2 {
         text-align: center;
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: $darkestColor;
         text-transform: uppercase;
         font-weight: 300;
         margin: 60px;
         display: block;
     }
+    .form-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px; //will remove this
+    }
     .contact-form {
-        width: 100vw;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin: 0 auto;
+        .form-row {
+            width: 900px;
+        }
         label {
             text-transform: uppercase;
-            margin-right: 30px;
             text-align: right;
-            width: 15%;
             color: #444;
+            font-size: 1.3rem;
+            padding-top: 5px;
+            display: inline-block;
+            width: 25%;
         }
         .input-field {
-            width: 600px;
+            width: 550px;
             height: 30px;
             border-radius: 10px;
             padding: 10px;
             margin: 10px;
             border: 1px solid $darkestColor;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
         .message-field {
-            width: 600px;
+            width: 550px;
             height: 300px;
             border-radius: 10px;
             padding: 10px;
             margin: 10px;
             border: 1px solid $darkestColor;
+            font-size: 1.3rem;
         }
         .text-danger {
             font-size: 1rem;
@@ -55,18 +66,112 @@
         }
         .submit-btn {
             background-color: rbga(0, 0, 0, 0.4);
-            font-size: 2rem;
+            font-size: 1.3rem;
             font-weight: 400;
             letter-spacing: 2.5px;
             color: $midLight;
             border: 2px solid $midLight;
-            padding: 15px;
+            padding: 10px 15px;
             text-align: right;
             border-radius: 5px;
             text-transform: uppercase;
             transition: .5s;
             text-decoration: none;
             margin: 0 10px;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .contact {
+        width: 100%;
+        .form-wrapper {
+            width: 90%;
+            .form-row {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {   
+    .contact {
+        font-size: 2rem;
+        line-height: 1.7;
+        padding-bottom: 40px;
+        width: 100%;
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+        }
+        .contact-form {
+            .form-row {
+                width: 600px;
+            }
+            label {
+                text-align: left;
+                width: 100px;
+                margin-left: 10px;
+                float: left;
+            }
+            .input-field {
+                width: 300px;
+                font-size: 1.1rem;
+                float: left;
+            }
+            .message-field {
+                width: 300px;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .contact {
+        padding: 0;
+        margin: 0;
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .form-wrapper {
+            width: 100%;
+            margin-left: 0;
+            padding: 0;
+        }
+        .contact-form {
+            width: 90%;
+            margin: 0 auto;
+            label {
+                text-align: left;
+                width: 100%;
+                margin-left: 10px;
+            }
+            .input-field {
+                width: 70%;
+                font-size: 1.1rem;
+            }
+            .message-field {
+                width: 70%;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-phone) {
+    .contact {
+        padding: 0;
+        padding-bottom: 40px;
+        width: 100%;
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .form-wrapper {
+            width: 100%;
         }
     }
 }

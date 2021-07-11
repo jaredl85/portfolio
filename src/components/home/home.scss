@@ -13,14 +13,17 @@
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    width: 35%;
+    width: 29%;
+    padding: 30px;
 }
 
 h1 {
     color: white;
-    font-size: 6rem;
+    font-size: 3.5rem;
     font-weight: 100;
     margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
     
     span {
         color: $mainColor;
@@ -31,16 +34,19 @@ h1 {
 }
 
 .home-btn {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: rbga(0, 0, 0, 0.4);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 2.5px;
     color: $midDark;
     border: 2px solid $midDark;
     padding: 15px;
     margin-top: 35px;
-    margin-left: 15px;
-    text-align: right;
     border-radius: 5px;
     text-transform: uppercase;
     transition: .5s;
@@ -69,51 +75,20 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 1200px) {
-    
-    h1 {
-        color: white;
-        font-size: 5rem;
-        font-weight: 100;
-        margin-bottom: 20px;
-        
-        span {
-            color: $mainColor;
-            font-weight: 300;
-            letter-spacing: 2px;
-            font-size: inherit;
+@media only screen and (max-width: 1400px) {
+    .splash-text-box {
+        width: 60%;
+        h1 {
+            font-size: 3rem;
         }
-    }
-    
-    .home-btn {
-        background-color: rbga(0, 0, 0, 0.4);
-        font-size: 1.75rem;
-        font-weight: 400;
-        letter-spacing: 2.5px;
-        color: $midDark;
-        border: 2px solid $midDark;
-        padding: 15px;
-        margin-top: 35px;
-        margin-left: 15px;
-        text-align: right;
-        border-radius: 5px;
-        text-transform: uppercase;
-        transition: .5s;
-        text-decoration: none;
     }
   }
 
-  @media only screen and (max-width: 540px) {
-    
-    h1 {
-        font-size: 2rem;        
-        span {
-            font-size: inherit;
+@media only screen and (max-width: 600px) {
+    .splash-text-box {
+        width: 80%;
+        h1 {
+            font-size: 2rem;
         }
-    }
-    
-    .home-btn {
-        font-size: 1rem;
-        width: 200px;
     }
   }
